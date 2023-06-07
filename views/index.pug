@@ -1,0 +1,21 @@
+extend layout 
+
+block main-content 
+  p Welcome to Game Store. A online game store for everyone.
+  img.banner(src="https://www.gamestop.ca/Views/Locale/Content/Images/heroslider/7946-Take2LEGO2KDriveAvailableNowHeroSlider/English/slider@3200w.jpg")
+
+  .game-section
+    .section-header
+      h2 New release
+      a(href="/products") See more
+    .games
+      each game in products
+        .game__item
+          a(href=`/products/${game._id}`)
+            img(src=game.imageURL)
+          p.game__item-name #{game.title}
+          p.game__item-price Price: $#{game.price}
+          a(href=`/products/${game._id}`) 
+            button Buy now
+
+//- All images from https://www.gamestop.ca/Home/Index

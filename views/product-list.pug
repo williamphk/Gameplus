@@ -1,0 +1,14 @@
+extend layout 
+
+block main-content 
+  h2 All Games
+  .list-section
+    .games
+      each game in products
+        .game__item.box
+          a(href=`/products/${game._id}`)
+            img(src=game.imageURL)
+          p.game__item-name #{game.title}
+          p.game__item-price Price: $#{game.price}
+          a(href=`/products/${game._id}`) 
+            button Buy now

@@ -1,0 +1,19 @@
+extend layout 
+
+block main-content 
+  .details-section
+    h2 #{product.title}
+    .image-wrapper
+      img(src=product.imageURL width=180)
+      .price-wrapper
+        div
+          p.game__item-price Price: $#{product.price}
+          if product.available
+            p.game__item-availibility Available
+          else 
+            p Not Available
+          p Release Date: #{product.releaseDate}
+        if !product.available
+          button(disabled=true) Add to cart
+        else 
+          button Add to cart

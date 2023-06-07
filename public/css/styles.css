@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+header {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+header h1 {
+  line-height: 20px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: rgb(165, 0, 0);
+}
+
+header h1 a:hover {
+  color: rgb(104, 1, 1);
+}
+
+header input {
+  width: 50%;
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+header input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+h1 {
+  color: red;
+}
+
+main > p,
+main > h2 {
+  padding-left: 5%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 5%;
+}
+
+.section-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.section-header button:hover {
+  color: red;
+}
+
+.game-section .games {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 5%;
+  gap: 50px 17%;
+}
+
+.list-section .games {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 5%;
+  gap: 50px 4%;
+}
+
+.game__item {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.game__item img {
+  width: 180px;
+}
+
+.game__item-name {
+  height: 36px;
+  margin: 10px;
+}
+
+.game__item-price {
+  margin: 2px;
+}
+
+p.game__item-availibility {
+  color: rgb(0, 182, 3);
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.game__item a button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 0;
+  font-weight: 700;
+}
+
+.game__item a button:hover {
+  background-color: rgb(213, 45, 45);
+}
+
+.box {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 2% 5%;
+}
+
+.details-section,
+.details-section .price-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-section {
+  padding-left: 5%;
+}
+
+.details-section .image-wrapper {
+  display: flex;
+  gap: 15%;
+}
+
+.details-section .image-wrapper img {
+  width: 20%;
+  min-width: 200px;
+  padding-left: 2%;
+}
+
+.details-section .image-wrapper .game__item-price {
+  font-size: 36px;
+}
+
+.details-section .image-wrapper button {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.details-section .image-wrapper button:disabled {
+  background-color: rgb(189, 189, 189);
+  cursor: default;
+}
+
+.details-section .image-wrapper button:disabled:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.details-section .image-wrapper button:hover {
+  background-color: rgb(213, 45, 45);
+}
+
+.price-wrapper {
+  justify-content: space-between;
+}
+
+footer {
+  margin: 0 5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .games {
+    justify-content: center;
+  }
+  .box {
+    padding: 5% 15%;
+  }
+  .details-section .image-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .details-section {
+    padding-right: 5%;
+  }
+  header input {
+    display: none;
+  }
+}
