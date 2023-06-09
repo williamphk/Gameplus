@@ -32,13 +32,28 @@ header h1 a:hover {
   color: rgb(104, 1, 1);
 }
 
+header button {
+  background-color: white;
+  border: none;
+}
+
+header button a {
+  text-decoration: none;
+  color: red;
+  font-size: 25px;
+}
+
+header button a:hover {
+  color :rgb(213, 45, 45)
+}
+
 header input {
   width: 50%;
   height: 35px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 20px;
   border-radius: 5px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 header input::placeholder {
@@ -70,6 +85,16 @@ main > h2 {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.section-header button a {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+}
+
+.section-header button a:hover {
+  color: rgb(213, 45, 45);
 }
 
 .section-header button:hover {
@@ -147,6 +172,12 @@ p.game__item-availibility {
   padding-left: 5%;
 }
 
+.details-section h2 {
+  padding-bottom: 12px;
+  margin-right: 24px;
+  border-bottom: 1px rgba(0, 0, 0, 0.3) solid
+}
+
 .details-section .image-wrapper {
   display: flex;
   gap: 15%;
@@ -163,7 +194,7 @@ p.game__item-availibility {
 }
 
 .details-section .image-wrapper button {
-  width: 100%;
+  width: 50%;
   height: 50px;
   border-radius: 20px;
   cursor: pointer;
@@ -171,7 +202,7 @@ p.game__item-availibility {
   color: white;
   border: 0;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .details-section .image-wrapper button:disabled {
@@ -188,7 +219,10 @@ p.game__item-availibility {
 }
 
 .price-wrapper {
+  padding-top: 2%;
+  padding-bottom: 2%;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 footer {
